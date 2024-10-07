@@ -6,7 +6,232 @@
     <description>Recent content in Tags on Dr. Mowinckel&#39;s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 03 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://drmowinckels.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://drmowinckels.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>https://drmowinckels.io/tags/ai/</link>
+      <pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>API</title>
+      <link>https://drmowinckels.io/tags/api/</link>
+      <pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LLM</title>
+      <link>https://drmowinckels.io/tags/llm/</link>
+      <pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/llm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://drmowinckels.io/tags/r/</link>
+      <pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DOI</title>
+      <link>https://drmowinckels.io/tags/doi/</link>
+      <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/doi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FAIR</title>
+      <link>https://drmowinckels.io/tags/fair/</link>
+      <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/fair/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>https://drmowinckels.io/tags/github/</link>
+      <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zenodo</title>
+      <link>https://drmowinckels.io/tags/zenodo/</link>
+      <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/zenodo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data science</title>
+      <link>https://drmowinckels.io/tags/data-science/</link>
+      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IDE</title>
+      <link>https://drmowinckels.io/tags/ide/</link>
+      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/ide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>positron</title>
+      <link>https://drmowinckels.io/tags/positron/</link>
+      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/positron/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VScode</title>
+      <link>https://drmowinckels.io/tags/vscode/</link>
+      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/vscode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub Actions</title>
+      <link>https://drmowinckels.io/tags/github-actions/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/github-actions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pride</title>
+      <link>https://drmowinckels.io/tags/pride/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/pride/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>startup</title>
+      <link>https://drmowinckels.io/tags/startup/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/startup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://drmowinckels.io/tags/programming/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RStudio</title>
+      <link>https://drmowinckels.io/tags/rstudio/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/rstudio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fail</title>
+      <link>https://drmowinckels.io/tags/fail/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/fail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://drmowinckels.io/tags/git/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Freesurfer</title>
+      <link>https://drmowinckels.io/tags/freesurfer/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/freesurfer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neuroimaging</title>
+      <link>https://drmowinckels.io/tags/neuroimaging/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/neuroimaging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reciprocal</title>
+      <link>https://drmowinckels.io/tags/reciprocal/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/reciprocal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>teaching</title>
+      <link>https://drmowinckels.io/tags/teaching/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/teaching/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://drmowinckels.io/tags/hugo/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reflections</title>
+      <link>https://drmowinckels.io/tags/reflections/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/reflections/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>bash</title>
       <link>https://drmowinckels.io/tags/bash/</link>
@@ -22,24 +247,6 @@
       <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://drmowinckels.io/tags/blogdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://drmowinckels.io/tags/hugo/</link>
-      <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://drmowinckels.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>https://drmowinckels.io/tags/r/</link>
-      <pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://drmowinckels.io/tags/r/</guid>
       <description></description>
     </item>
     
@@ -71,6 +278,33 @@
     </item>
     
     <item>
+      <title>carpentry</title>
+      <link>https://drmowinckels.io/tags/carpentry/</link>
+      <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/carpentry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tidyverse</title>
+      <link>https://drmowinckels.io/tags/tidyverse/</link>
+      <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/tidyverse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>workshop</title>
+      <link>https://drmowinckels.io/tags/workshop/</link>
+      <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/workshop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>knitr</title>
       <link>https://drmowinckels.io/tags/knitr/</link>
       <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
@@ -98,29 +332,11 @@
     </item>
     
     <item>
-      <title>GitHub Actions</title>
-      <link>https://drmowinckels.io/tags/github-actions/</link>
-      <pubDate>Tue, 23 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://drmowinckels.io/tags/github-actions/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>ggseg</title>
       <link>https://drmowinckels.io/tags/ggseg/</link>
       <pubDate>Sun, 14 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://drmowinckels.io/tags/ggseg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Neuroimaging</title>
-      <link>https://drmowinckels.io/tags/neuroimaging/</link>
-      <pubDate>Sun, 14 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://drmowinckels.io/tags/neuroimaging/</guid>
       <description></description>
     </item>
     
@@ -139,6 +355,15 @@
       <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://drmowinckels.io/tags/packages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>quarto</title>
+      <link>https://drmowinckels.io/tags/quarto/</link>
+      <pubDate>Thu, 27 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/tags/quarto/</guid>
       <description></description>
     </item>
     
@@ -175,15 +400,6 @@
       <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://drmowinckels.io/tags/r-for-psychologists/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>RStudio</title>
-      <link>https://drmowinckels.io/tags/rstudio/</link>
-      <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://drmowinckels.io/tags/rstudio/</guid>
       <description></description>
     </item>
     

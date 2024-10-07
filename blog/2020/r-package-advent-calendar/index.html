@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/>
+
+
+<title>R-Package Advent Calendar 2020 - Dr. Mowinckel&#39;s</title>
+
+
+<meta name="hugo-igloo" />
+
+
+
+
+  <meta name="description" content="The advent calendar is one R-package per day that I personally use and find very useful in my work . The hope is that it would give people a mix of familiar and less familiar packages that might help their work too . R-Package Advent Calendar 2020 is one package per day ." />
+  <meta name="author" content="Dr. Mowinckel" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.119.0">
+
+
+
+        
+
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://drmowinckels.io/">
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="website">
+<meta prefix="og: http://ogp.me/ns#" property="og:title" content="R-Package Advent Calendar 2020 - Dr. Mowinckel&rsquo;s">
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="The advent calendar is one R-package per day that I personally use and find very useful in my work . The hope is that it would give people a mix of familiar and less familiar packages that might help their work too . R-Package Advent Calendar 2020 is one package per day .">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="https://drmowinckels.io/">
+<meta name="twitter:title" content="Igloo">
+<meta name="twitter:description" content="The advent calendar is one R-package per day that I personally use and find very useful in my work . The hope is that it would give people a mix of familiar and less familiar packages that might help their work too . R-Package Advent Calendar 2020 is one package per day .">
+
+
+
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://drmowinckels.io/blog/2020/r-package-advent-calendar/featured.png" />
+    <meta name="twitter:image" content="https://drmowinckels.io/blog/2020/r-package-advent-calendar/featured.png">
+
+
+
+        
+  
+
+
+
+
+
+    
+
+
+
+ 
+
+    <link rel="stylesheet" href="https://drmowinckels.io/bundle.min.b949f82ef13ab020c09cc9a01a06b5c35de205c6382cde6ed472ebf5efc8e9d2.css" 
+    integrity="sha256-uUn4LvE6sCDAnMmgGga1w13iBcY4LN5u1HLr9e/I6dI=" 
+    crossorigin="anonymous">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/night-owl.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+
+
+    <script src="https://drmowinckels.io/uikit/dist/js/uikit.min.js"></script>
+
+
+    <script src="https://drmowinckels.io/uikit/dist/js/uikit-icons.min.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-k6Rqe5g0pSv8V0e6fFfFjW1y77vKTjkE1IUaB+MHUO2GtODX6azbMqa6Y53/zJTU" crossorigin="anonymous">
+
+        
+
+
+
+    
+
+    
+    
+    
+    <link
+        rel="icon"
+        href="https://drmowinckels.io/img/fav.ico_hu5c0771520169a7c5939dfeb49415bb9c_5256_16x0_resize_box_3.png"
+        sizes="16x16"
+        type="image/png"
+    />
+    
+    
+    
+        
+        <link rel="shortcut icon" href="https://drmowinckels.io/favicon.ico" type="image/x-icon">
+    
+    <link
+        rel="icon"
+        href="https://drmowinckels.io/img/fav.ico_hu5c0771520169a7c5939dfeb49415bb9c_5256_32x0_resize_box_3.png"
+        sizes="32x32"
+        type="image/png"
+    />
+    
+    
+    
+    <link
+        rel="icon"
+        href="https://drmowinckels.io/img/fav.ico_hu5c0771520169a7c5939dfeb49415bb9c_5256_57x0_resize_box_3.png"
+        sizes="57x57"
+        type="image/png"
+    />
+    
+    
+    
+    <link
+        rel="icon"
+        href="https://drmowinckels.io/img/fav.ico_hu5c0771520169a7c5939dfeb49415bb9c_5256_76x0_resize_box_3.png"
+        sizes="76x76"
+        type="image/png"
+    />
+    
+    
+    
+    <link
+        rel="icon"
+        href="https://drmowinckels.io/img/fav.ico_hu5c0771520169a7c5939dfeb49415bb9c_5256_96x0_resize_box_3.png"
+        sizes="96x96"
+        type="image/png"
+    />
+    
+    
+    
+    <link
+        rel="icon"
+        href="https://drmowinckels.io/img/fav.ico_hu5c0771520169a7c5939dfeb49415bb9c_5256_128x0_resize_box_3.png"
+        sizes="128x128"
+        type="image/png"
+    />
+    
+    
+    
+    <link
+        rel="apple-touch-icon"
+        href="https://drmowinckels.io/img/fav.ico_hu5c0771520169a7c5939dfeb49415bb9c_5256_120x0_resize_box_3.png"
+        sizes="120x120"
+        type="image/png"
+    />
+    
+    
+    
+    <link
+        rel="icon"
+        href="https://drmowinckels.io/img/fav.ico_hu5c0771520169a7c5939dfeb49415bb9c_5256_150x0_resize_box_3.png"
+        sizes="150x150"
+        type="image/png"
+    />
+    
+    
+    
+    <link
+        rel="apple-touch-icon"
+        href="https://drmowinckels.io/img/fav.ico_hu5c0771520169a7c5939dfeb49415bb9c_5256_152x0_resize_box_3.png"
+        sizes="152x152"
+        type="image/png"
+    />
+    
+    
+    
+        <meta name="msapplication-TileImage" 
+            content="/img/fav.ico_hu5c0771520169a7c5939dfeb49415bb9c_5256_144x0_resize_box_3.png">
+    
+    <link
+        rel="icon"
+        href="https://drmowinckels.io/img/fav.ico_hu5c0771520169a7c5939dfeb49415bb9c_5256_144x0_resize_box_3.png"
+        sizes="144x144"
+        type="image/png"
+    />
+    
+    
+    
+    <link
+        rel="apple-touch-icon"
+        href="https://drmowinckels.io/img/fav.ico_hu5c0771520169a7c5939dfeb49415bb9c_5256_180x0_resize_box_3.png"
+        sizes="180x180"
+        type="image/png"
+    />
+    
+    
+    
+    <link
+        rel="icon"
+        href="https://drmowinckels.io/img/fav.ico_hu5c0771520169a7c5939dfeb49415bb9c_5256_192x0_resize_box_3.png"
+        sizes="192x192"
+        type="image/png"
+    />
+    
+    
+    
+    <link
+        rel="shortcut icon"
+        href="https://drmowinckels.io/img/fav.ico_hu5c0771520169a7c5939dfeb49415bb9c_5256_196x0_resize_box_3.png"
+        sizes="196x196"
+        type="image/png"
+    />
+<meta name="msapplication-TileColor" content="#198c8c">
+<meta name="theme-color" content="#198c8c"> 
+<meta name="msapplication-TileColor" content="#198c8c">
+
+    </head>
+    <body>
+            
+<div class="banner ">
+    
+        <div class="uk-container uk-container-small banner-top">
+            <h1>blog</h1>
+        </div>
+    
+</div>
+
+        
+
+
+
+<div id="smallnav" uk-offcanvas="flip: true" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav">
+            
+                <a class="uk-navbar-item uk-logo" href="https://drmowinckels.io/">
+                    <img src="https://drmowinckels.io/img/logo.png" width="40">
+                </a> 
+            
+            
+                <li>
+                    <a href="https://drmowinckels.io/about">
+                        About
+                        
+                    </a>
+                    
+                </li>
+            
+                <li>
+                    <a href="https://drmowinckels.io/blog">
+                        Blog
+                        
+                    </a>
+                    
+                </li>
+            
+                <li>
+                    <a href="https://drmowinckels.io/talks">
+                        Talks
+                        
+                    </a>
+                    
+                </li>
+            
+                <li>
+                    <a href="https://drmowinckels.io/projects">
+                        Projects
+                        
+                    </a>
+                    
+                </li>
+            
+        </ul>
+    </div>
+</div>
+<a class="uk-navbar-container uk-navbar-left uk-navbar-toggle uk-hidden@s" uk-toggle="target: #smallnav" uk-navbar-toggle-icon></a>
+
+<div class="uk-visible@s" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container">   
+        <div uk-navbar>     
+            <div class="uk-navbar-center">
+                
+                    
+                        <div class="uk-navbar-center-left">
+                            <ul class="uk-navbar-nav">
+                    
+                    
+                    <li>
+                        <a href="https://drmowinckels.io/about">
+                            About
+                            
+                        </a>
+                        
+                    </li>
+                    
+                
+                    
+                    
+                    <li>
+                        <a href="https://drmowinckels.io/blog">
+                            Blog
+                            
+                        </a>
+                        
+                    </li>
+                    
+                            </ul>
+                        </div>
+                    
+                
+                    
+                    
+                        
+                            <a class="uk-navbar-item uk-logo" href="https://drmowinckels.io/">
+                                <img src="https://drmowinckels.io/img/logo.png" width="40">
+                            </a> 
+                        
+                        <div class="uk-navbar-center-right">
+                            <ul class="uk-navbar-nav"> 
+                    
+                    <li>
+                        <a href="https://drmowinckels.io/talks">
+                            Talks
+                            
+                        </a>
+                        
+                    </li>
+                    
+                
+                    
+                    
+                    <li>
+                        <a href="https://drmowinckels.io/projects">
+                            Projects
+                            
+                        </a>
+                        
+                    </li>
+                    
+                            </ul>
+                        </div>
+                    
+                
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+        <div id="content" class="uk-container uk-container-small uk-margin-large-top">
+    <article class="uk-article">
+        <div class="uk-grid uk-flex-top" uk-grid>
+            
+            
+            <div class="uk-width-1-4@s">
+              <img src="https://drmowinckels.io/blog/2020/r-package-advent-calendar/featured.png" alt="R-Package Advent Calendar 2020" class="uk-border-rounded">
+              
+            </div>
+
+        <div class="uk-width-3-4@s">
+        <h1 class="uk-article-title">R-Package Advent Calendar 2020</h1>
+        
+        <div class="uk-border-top uk-article-meta uk-flex uk-flex-center uk-flex-between">
+            <h3 class="uk-margin-top-small">
+                Dec 25, 2020
+            </h3>
+            
+
+            
+                <div class="uk-flex uk-flex-wrap uk-flex-right">
+                    
+                        
+                        
+                        
+                        
+                        
+                        <div class="uk-card uk-margin-left uk-margin-bottom">
+                            <a href="https://drmowinckels.io/tags/r/" class="uk-label uk-label-secondary tags" >
+                                R
+                            </a>
+                        </div>
+                    
+                        
+                        
+                        
+                        
+                        
+                        <div class="uk-card uk-margin-left uk-margin-bottom">
+                            <a href="https://drmowinckels.io/tags/advent-calendar/" class="uk-label uk-label-secondary tags" >
+                                Advent calendar
+                            </a>
+                        </div>
+                    
+                        
+                        
+                        
+                        
+                        
+                        <div class="uk-card uk-margin-left uk-margin-bottom">
+                            <a href="https://drmowinckels.io/tags/packages/" class="uk-label uk-label-secondary tags" >
+                                Packages
+                            </a>
+                        </div>
+                    
+                </div>
+            
+        </div>
+    </div>
+        <div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
+            <div class="uk-offcanvas-bar">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <h3>Table of Content</h3>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#how-i-selected-a-package-per-day">How I selected a package per day</a></li>
+  </ul>
+</nav>
+            </div>
+        </div>
+        
+            <p class="uk-text-lead">The advent calendar is one R-package per day that I personally use and find very useful in my work . The hope is that it would give people a mix of familiar and less familiar packages that might help their work too . R-Package Advent Calendar 2020 is one package per day .</p>
+        
+        <div class="uk-markdown uk-width">
+            <p>This year has been truly something different for us all.
+Blogging has definitely taken a toll, as real life has been quite something to handle.
+So, in order to end the year with a bang, and something fun, I started a twitter advent calendar!</p>
+<p>The advent calendar is one R-package per day that I personally use and find very useful in my work.
+The hope is that it would give people a mix of familiar and less familiar packages that might help their work too.
+In each package sub-thread, I try to highlight some functions or functionality from the various packages that I like in particular.
+There are so many packages on CRAN and other online repositories (BioConductor, GitHub, Gitlab, NeuroConductor etc.), that it can be hard to find something to help you along.
+I hope this atleast points you in a good direction.
+There are other packages that could cover some or all of the same functionality as the ones listed here, but these are the ones I personally use.</p>
+<div class="list-grid">
+    <ul class="list-container list-container-hexagon">
+   <li class="list-item" style="background-image: url(hex/distill.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1334054102905593861" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>distill</h2>
+                <p>2020-12-01</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/here.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1334055725644058624" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>here</h2>
+                <p>2020-12-02</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/glue.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1334404923564437504" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>glue</h2>
+                <p>2020-12-03</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/holepunch.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1334770520953417729" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>holepunch</h2>
+                <p>2020-12-04</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/xaringan.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1335302958989398016" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>xaringan</h2>
+                <p>2020-12-05</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/usethis.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1335691689764204544" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>usethis</h2>
+                <p>2020-12-06</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/nettskjemar.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1335858603891232768" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>nettskjemar</h2>
+                <p>2020-12-07</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/stringr.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1336215088089493504" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>stringr</h2>
+                <p>2020-12-08</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/kableExtra.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1336575636324954113" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>kableExtra</h2>
+                <p>2020-12-09</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/patchwork.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1336943011389992961" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>patchwork</h2>
+                <p>2020-12-10</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/rticles.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1337305681385414656" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>rticles</h2>
+                <p>2020-12-11</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/forcats.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1337869018129195012" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>forcats</h2>
+                <p>2020-12-12</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/vitae.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1338028973708677120" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>vitae</h2>
+                <p>2020-12-13</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/pbmcapply.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1338400483229261824" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>pbmcapply</h2>
+                <p>2020-12-14</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/lubridate.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1338802526955728896" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>lubridate</h2>
+                <p>2020-12-15</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/magick.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1339110009427423233" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>magick</h2>
+                <p>2020-12-16</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/papayar.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1339491287003783169" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>papayar</h2>
+                <p>2020-12-17</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/learnr.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1339902456382296064" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>learnr</h2>
+                <p>2020-12-18</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/janitor.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1340205260317581312" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>janitor</h2>
+                <p>2020-12-19</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/xaringanExtra.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1340566661712257030" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>xaringanExtra</h2>
+                <p>2020-12-20</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/reactable.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1340938927734222848" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>reactable</h2>
+                <p>2020-12-21</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/broom.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1341293669001932805" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>broom</h2>
+                <p>2020-12-22</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/rio.png);">
+    <a href="https://twitter.com/DrMowinckels/status/1341655830337302531" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>rio</h2>
+                <p>2020-12-23</p>
+            </div>
+        </div>
+    </a>
+</li>
+   <li class="list-item" style="background-image: url(hex/pkgdown.png);">
+    <a href="https://twitter.com/DrMowinckels/status/" >
+        <div class="list-overlay list-overlay-hexagon">
+            <div class="list-item-content ">
+                <h2>pkgdown</h2>
+                <p>2020-12-24</p>
+            </div>
+        </div>
+    </a>
+</li>
+    </ul>
+</div>
+<h2 id="how-i-selected-a-package-per-day">How I selected a package per day</h2>
+<p>Before I started the calendar (one day late!), I sat down and wrote a list of all the packages I wanted in my advent calendar.</p>
+<p>The rules were:</p>
+<ul>
+<li>One package per day</li>
+<li>I must personally use it</li>
+<li>I can find easy examples of why I like using it</li>
+</ul>
+<p>The point of the calendar was to do something fun, that others might find useful, and that would highlight and give credit to great packages.
+But I also did not have the possibility of spending lots of time researching other alternative options or the like, it was to be a light-weight and easy thing for me to do.</p>
+<p>So i wrote down my list in R:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>pks <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;usethis&#34;</span>, <span style="color:#e6db74">&#34;rio&#34;</span>, <span style="color:#e6db74">&#34;distill&#34;</span>, 
+</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;boom&#34;</span>, <span style="color:#e6db74">&#34;patchwork&#34;</span>, <span style="color:#e6db74">&#34;holepunch&#34;</span>,
+</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;learnr&#34;</span>, <span style="color:#e6db74">&#34;xaringan&#34;</span>, <span style="color:#e6db74">&#34;magick&#34;</span>,
+</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;nettskjemar&#34;</span>, <span style="color:#e6db74">&#34;pkgdown&#34;</span>, <span style="color:#e6db74">&#34;here&#34;</span>,
+</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;rticles&#34;</span>, <span style="color:#e6db74">&#34;vitae&#34;</span>, <span style="color:#e6db74">&#34;xaringanExtra&#34;</span>,
+</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;stringr&#34;</span>, <span style="color:#e6db74">&#34;forcats&#34;</span>, <span style="color:#e6db74">&#34;lubridate&#34;</span>, 
+</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;glue&#34;</span>, <span style="color:#e6db74">&#34;janitor&#34;</span>, <span style="color:#e6db74">&#34;pbmcapply&#34;</span>,
+</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;kableExtra&#34;</span>, <span style="color:#e6db74">&#34;papayar&#34;</span>, <span style="color:#e6db74">&#34;reactable&#34;</span>)
+</span></span></code></pre></div><p>Then I made a little function that would draw a random one every time I ran it, while omitting the ones I had drawn before</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>get_todays <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">function</span>(completed, pkgs){
+</span></span><span style="display:flex;"><span>  days <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">24</span>
+</span></span><span style="display:flex;"><span>  days <span style="color:#f92672">&lt;-</span> days[<span style="color:#f92672">!</span>days <span style="color:#f92672">%in%</span> completed]
+</span></span><span style="display:flex;"><span>  k <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sample</span>(days, <span style="color:#ae81ff">1</span>)  
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">cat</span>(pkgs[k], <span style="color:#e6db74">&#34;\n&#34;</span>)
+</span></span><span style="display:flex;"><span>  k
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Now I had an itty bitty function that would draw from my list by random each day, so I did not have to think about the order of things.
+Every day I drew a new package, tweeted about it, and added it to the completed list.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>completed <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">19</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">1</span>, 
+</span></span><span style="display:flex;"><span>               <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">22</span>, <span style="color:#ae81ff">5</span>, 
+</span></span><span style="display:flex;"><span>               <span style="color:#ae81ff">17</span>, <span style="color:#ae81ff">21</span>, <span style="color:#ae81ff">18</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">7</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">get_todays</span>(completed, pks)
+</span></span></code></pre></div><pre tabindex="0"><code>## rticles
+</code></pre><pre tabindex="0"><code>## [1] 13
+</code></pre><p>Now, there is a slight problem with my function.
+I forgot to add a random seed, as pointed out by <a href="https://twitter.com/tobilottii">Tobias Busch</a></p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">It&#39;s a good start, but for full reproducibility it needs a random seed! And more <a href="https://twitter.com/hashtag/Blockchain?src=hash&amp;ref_src=twsrc%5Etfw">#Blockchain</a>, of course! 😋</p>&mdash; Tobias Busch (@tobilottii) <a href="https://twitter.com/tobilottii/status/1334169186751410178?ref_src=twsrc%5Etfw">December 2, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>So, always room for improvement! If I do something similar next year, I&rsquo;ll be sure to add that!</p>
+<p>Have a great Christmas, everyone!</p>
+
+        </div>
+    </article><div class="uk-margin">
+    <button  class="uk-button uk-button-default" uk-toggle="target: #citation; animation: uk-animation-fade" type="button">
+        Cite me!
+    </button>
+    <div id="citation" hidden class="uk-margin">
+        <div uk-grid class="uk-child-width-1-2@s">
+            <div>
+                For attribution, please cite this work as
+                <div class="uk-card uk-card-default uk-card-bod uk-text-breaky">
+                    Dr. Mowinckel 
+                    (Dec 25, 2020) 
+                    R-Package Advent Calendar 2020. 
+                    Retrieved from https://drmowinckels.io/blog/2020/r-package-advent-calendar/.
+                     DOI: https://www.doi.org/10.5281/zenodo.13273508
+                </div>
+            </div>
+            <div>
+                <b>BibTeX citation</b>
+                <div class="uk-card uk-card-default uk-card-body uk-text-break">
+                    @misc{ <br>
+                        2020-r-package-advent-calendar-2020,<br>
+                        &emsp;author =  "Dr. Mowinckel",<br>
+                        &emsp;title = "R-Package Advent Calendar 2020",<br>
+                        &emsp;url = "https://drmowinckels.io/blog/2020/r-package-advent-calendar/",<br>
+                        &emsp;year = 2020,<br>
+                         &emsp;doi = "https://www.doi.org/10.5281/zenodo.13273508",<br> 
+                        &emsp;updated = "Oct 7, 2024"<br>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="uk-grid uk-child-width-expand@s uk-margin-top" uk-grid>
+    <div class="uk-width-expand">
+        
+            <a class="uk-button uk-button-default" href="https://drmowinckels.io/blog/2020/the-linear-regression-family-in-r/">
+                <span class="uk-margin-small-left" uk-icon="chevron-double-left"></span>
+                The Linear Regression Family in R
+            </a>
+        
+    </div>
+    
+    <div class="uk-width-auto">
+        
+            <a class="uk-button uk-button-default" href="https://drmowinckels.io/blog/2020/new-year-s-wishes/">
+                New Year&rsquo;s Wishes
+                <span class="uk-margin-small-right" uk-icon="chevron-double-right"></span>
+            </a>
+        
+    </div>
+</div>
+
+    
+    
+        <div class="uk-container uk-margin-top">
+            <script src="https://giscus.app/client.js"
+                data-repo=DrMowinckels/drmowinckels.github.io
+                data-repo-id=MDEwOlJlcG9zaXRvcnkxMjM0NzEwMTI&#61;
+                data-category=Comments
+                data-category-id=DIC_kwDOB1wEpM4CAG0c
+                data-mapping=pathname
+                data-reactions-enabled=1
+                data-emit-metadata=0
+                data-theme=light
+                data-lang=en
+                crossorigin="anonymous"
+                async>
+            </script>
+</div>
+
+    
+
+        </div><div class="section uk-section uk-padding-remove-vertical uk-margin">
+    <div class="banner footer" height="500px">
+        <div class="uk-container">
+            <div class="uk-grid" uk-grid>
+                <div class="uk-width-1-2@m">
+                    
+                      <h3><i class="fa-regular fa-copyright"></i> 2023 Athanasia Mo Mowinckel</h3>
+                      <p></p>
+                    
+                  </div>
+              <div class="uk-width-1-2@m">
+                
+              </div>
+            </div>
+          </div>
+          <div class="footer-title uk-text-right">
+            <h1>Dr. Mowinckel&rsquo;s</h1>
+        </div>
+    </div>
+</div>
+</body>
+</html>

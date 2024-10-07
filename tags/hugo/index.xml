@@ -6,15 +6,33 @@
     <description>Recent content in hugo on Dr. Mowinckel&#39;s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 03 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://drmowinckels.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://drmowinckels.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo Igloo theme</title>
+      <link>https://drmowinckels.io/projects/hugo-igloo/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/projects/hugo-igloo/</guid>
+      <description>This is a theme for creating a website theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator. The Hugo Igloo
+theme is the theme of my website and created using UIkit 3.</description>
+    </item>
+    
+    <item>
+      <title>New year, New blog</title>
+      <link>https://drmowinckels.io/blog/2024/newyear-newblog/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://drmowinckels.io/blog/2024/newyear-newblog/</guid>
+      <description>New year, a new blog, and some reflections on the past year that has passed . I&amp;rsquo;m taking the lead for a new Core Facility at the University of Oslo . I also got funding from my university to establish a Hub/Node network, which is an initiative from University IT to facilitate exchange of knowledhe between University staff .</description>
+    </item>
+    
     <item>
       <title>Reorganising Hugo Content and Aliasing</title>
       <link>https://drmowinckels.io/blog/2023/reorganising-hugo/</link>
       <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://drmowinckels.io/blog/2023/reorganising-hugo/</guid>
-      <description>I&amp;rsquo;m working on a little website revamp, and on that occasion I have been thinking through some reorganisation of the file content of my website.
-I&amp;rsquo;m a stickler for good organisation of content, and I was feeling that my blog folder was turning unruly. While it was nice machine readable and sorting well etc, it was just not&amp;hellip; nice for a human in the long run. I needed something different, something to soothe my organisatory heart.</description>
+      <description>Hugo Aliasing is a stickler for good organisation of content . Reorganising Hugo Content and Aliasing has a nice way of dealing with that, which they call [gohugoioio] Reorganisation concept is that people should redirect to the specific page that they should be using .</description>
     </item>
     
     <item>
@@ -23,20 +41,16 @@ I&amp;rsquo;m a stickler for good organisation of content, and I was feeling tha
       <pubDate>Tue, 23 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://drmowinckels.io/blog/2021/using-github-actions-to-build-your-hugo-website/</guid>
-      <description>Lately, I&amp;rsquo;ve been doing some work in getting Hugo websites building through Github actions, and then have them deployed with Netlify. Of course, once we are building with GitHub actions we could also just use GitHub pages to deploy, and I&amp;rsquo;ll show how you can do that too, even if I will keep using Netlify.
-Why build with GitHub actions and not let Netlify do all the job? Well, there is definitely good reasons to let Netlify do all the work for you.</description>
+      <description>Using GitHub Actions is a service that runs Continuous Integration, meaning that using a set-up file you can ask workers (computers run by GitHub) to do certain operations on your repository at certain triggers (at push, pull-requests or even on a schedule with crontab) This is where GitHub Actions shines. It is free and so are its actions for small jobs like what we want to do . To build on Netlify, you need all your content version controlled, in my case with git, and stored on GitHub . This is fine and dandy for text files like markdown, csv data, and images that &lt;em&gt;will not change often&lt;/em&gt;.</description>
     </item>
     
     <item>
       <title>Changing your Blogdown Workflow</title>
-      <link>https://drmowinckels.io/blog/2020/05-25-changing-you-blogdown-workflow/</link>
+      <link>https://drmowinckels.io/blog/2020/changing-you-blogdown-workflow/</link>
       <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://drmowinckels.io/blog/2020/05-25-changing-you-blogdown-workflow/</guid>
-      <description>title: &amp;ldquo;{{ replace .TranslationBaseName &amp;ldquo;-&amp;rdquo; &amp;quot; &amp;quot; | title }}&amp;rdquo; author: Dr. Mowinckel date: {{ .Date }}
-draft: true output: html_document: keep_md: yes always_allow_html: true
-tags: [] image: index_files/ title: &amp;ldquo;R-package Projects&amp;rdquo; weight: 10 output: html_document: keep_md: yes slug: &amp;ldquo;changing-you-blogdown-workflow&amp;rdquo; aliases:
-&amp;lsquo;/blog/2020-05-25-changing-you-blogdown-workflow&amp;rsquo; For more than a year now I have avoided updating my hugo-version on netlify and updating my theme because there was a lot of work that needed to be done to make that happen.</description>
+      <guid>https://drmowinckels.io/blog/2020/changing-you-blogdown-workflow/</guid>
+      <description>Blogdown is usually used with [go hugo], a static webpage builder . Blogdown renders directly from &lt;code&gt;Rmd&lt;/code&gt; to &lt;code&gt;html, meaning it circumvents hugo&#39;s processing of &lt;/code&gt;md` . This can cause some unwanted issues depending on your theme . It can also make it difficult to maintain your webpage over time .</description>
     </item>
     
   </channel>
